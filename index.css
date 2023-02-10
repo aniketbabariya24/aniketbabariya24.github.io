@@ -410,7 +410,7 @@ header.shadow {
       justify-content: center;
     }
     #skills{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin-top: 200px;
         /* height: 110vh; */
       }

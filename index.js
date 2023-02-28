@@ -26,4 +26,17 @@ darkmode.onclick = () => {
   }
 };
 
+const resume = document.getElementById("resume");
+resume.onclick = (e) => {
+    // e.preventDefault()
+    window.open("./Media/Aniket_Babariya_Resume.pdf")
+    // console.log("Click");
+}
+
+const containerResume = document.getElementById("containerResume");
+containerResume.onclick = (e) => {
+    // e.preventDefault()
+    window.open("./Media/Aniket_Babariya_Resume.pdf")
+    // console.log("Click");
+}
                                     

@@ -23,7 +23,7 @@
 
 section {
   padding: 50px 10%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 body.active {
@@ -288,8 +288,8 @@ skills-container>div>div {
     margin-top: 20px;
   } */
 
-/* ================================================Animation=============== */
 
+/* ==================================Project=========================== */
 
 .carousel-item {
   position: absolute;
@@ -424,28 +424,28 @@ skills-container>div>div {
 .mail-1 {
   z-index: 2;
   opacity: 1;
-  background: url('./Media/mail1.png');
+  background: url('./Media/divex4.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mail-2 {
-  background: url('./Media/mail2.png');
+  background: url('./Media/divex1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mail-3 {
-  background: url('./Media/mail3.png');
+  background: url('./Media/divex2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mail-4 {
-  background: url('./Media/mail4.png');
+  background: url('./Media/divex3.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -525,16 +525,11 @@ skills-container>div>div {
 /* } */
 
 #projects {
-  /* border: 2px solid white; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* width: 70%; */
-  margin: auto;
-  /* grid-template-rows: 50% 50%; */
-  gap: 50px;
-  /* height: auto; */
   /* height: 200vh; */
-  /* margin-top: 30px; */
+  margin: auto;
+  gap: 50px;
 }
 
 .carousel-wrapper {
@@ -543,7 +538,11 @@ skills-container>div>div {
   width: 100%;
   display: block;
   /* margin: 20px auto; */
-  /* border: 2px solid black; */
+  /* border: 2px solid wheat; */
+}
+
+.carousel-wrapper img{
+  width: 100%;
 }
 
 .project-card {
@@ -554,14 +553,11 @@ skills-container>div>div {
   /* box-shadow: #0078ff 0 3px 3px,#0078ff 0 4px 4px; */
   padding: 20px 25px;
   border-radius: 1rem;
+  align-items: space-around;
+  gap: 30px;
   /* background-color: #; */
 }
 
-.project-card:hover {
-  /* background-color: aqua; */
-  transform: scale(1.02);
-  transition: 0.4s;
-}
 
 .project-btn-div {
   display: flex;
@@ -569,98 +565,45 @@ skills-container>div>div {
 }
 
 .project-btn-div>button {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 5px;
+  color: #fff;
   background-color: #0078ff;
   font-weight: 900;
 }
 
-
-/* =====================Contact======================= */
-
-
-#contact{
+.project-details{
+  /* border: 2px solid red; */
   display: flex;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 40px;
-  /* padding: 20px 0px; */
+  flex-direction: column;
   justify-content: space-between;
-  /* border: 1px solid wheat; */
+  gap: 20px;
+  /* height: 50%; */
 }
 
-#contact>div:nth-child(1) {
+.techStacks{
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(7,1fr);
+  grid-column-gap: 15px;
+  /* margin-bottom: 30px; */
+  /* border: 1px solid white; */
+}
+
+.techStacks>div{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* border: 1px solid wheat; */
 }
 
-#contact>div:nth-child(1)>a{
-  text-decoration: none;
+.mongoClass{
+  margin-left: -10px;
 }
 
-#contact>div:nth-child(2){
-  /* border: 1px solid blue; */
-  display: flex;
-  flex-direction: column;
-  /* display: flex;
-  flex-direction: column; */
+.techStacks>div>img{
+  width: 100%;
+  /* height: 46px; */
 }
-
-#contactForm{
-  /* border: 1px solid skyblue; */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.inputClass{
-  width: 400px;
-  border: 2px solid #ff652f;
-  color: #ffe400;
-  font-size: 16px;
-  border-radius: 10px;
-  padding: 10px 10px;
-  background-color: #272727;
-}
-
-#contactSubmit{
-  color: #272727;
-  font-size: 16px;
-  /* text-align: center; */
-  width: 20%;
-  padding: 8px 10px;
-  margin-bottom: 20px;
-  border: 2px solid #ff652f;
-  border-radius: 10px;
-  background-color: #ff652f;
-}
-
-#contactSubmit:hover{
-  color: #ff652f;
-  background-color: #272727;
-  cursor: pointer;
-}
-
-#contactMessage{
-  resize: vertical;
-}
-
-::placeholder {
-  color: #ff652f;
-  opacity: 70%;
-}
-
-#GitHub{
-  display: flex;
-  width: 70%;
-  margin: auto;
-  justify-content: space-between;
-}
-
 
   @media (max-width: 991px) {
     header {
@@ -802,12 +745,10 @@ skills-container>div>div {
       } */
     
       .skills-container> div{
-        border: 2px solid #0078ff;
+        border: 5px solid #0078ff;
+        border-radius: 15px;
         text-align: center;
-        /* border: 2px sol; */
-        border-radius: 3rem;
         box-shadow: 0 5px 15px rgb(73 73 73 / 35%);
-        box-shadow: #0078ff 0 3px 10px,#0078ff 0 4px 4px;
         margin: auto;
         padding: 20px;
         text-align: center;
@@ -827,10 +768,7 @@ skills-container>div>div {
       margin-left: 25%;
     }
 
-    #projects{
-     margin-top: 700px;
-
-    }
+    
 
     #fourProjects{
       display: grid;

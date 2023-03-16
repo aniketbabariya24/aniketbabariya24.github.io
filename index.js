@@ -26,17 +26,36 @@ darkmode.onclick = () => {
   }
 };
 
-const resume = document.getElementById("resume");
+const resume = document.getElementById("resume-link-1");
 resume.onclick = (e) => {
     // e.preventDefault()
     window.open("./Media/Aniket_Babariya_Resume.pdf")
     // console.log("Click");
 }
 
-const containerResume = document.getElementById("containerResume");
+const containerResume = document.getElementById("resume-link-2");
 containerResume.onclick = (e) => {
     // e.preventDefault()
     window.open("./Media/Aniket_Babariya_Resume.pdf")
     // console.log("Click");
 }
-                                    
+                          
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});

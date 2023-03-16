@@ -23,7 +23,7 @@
             <li><a href="#skills" class="nav-link skills">Skills</a></li>
             <li><a href="#projects" class="nav-link projects">Projects</a></li>
             <li><a href="#contact" class="nav-link contact">Contact</a></li>
-            <li><a href="./Media/Aniket_Babariya_Resume.pdf" download="Aniket_Babariya_Resume" id="resume">Resume&nbsp;<i class="fa-solid fa-cloud-arrow-down"></i></a></li>
+            <li><a href="./Media/Aniket_Babariya_Resume.pdf" download="Aniket_Babariya_Resume" id="resume-link-1">Resume&nbsp;<i class="fa-solid fa-cloud-arrow-down"></i></a></li>
             <div class="bx bx-moon" id="darkmode"></div>
         </ul>
     </header>
@@ -84,7 +84,7 @@
                     <span>abc@gmail.com</span>
                 </div>
             </div>
-            <a href="#" class="btn">Resume</a>
+            <a href="#" id="resume-link-2" class="btn">Resume</a>
         </div>
     </div>
 </section>
@@ -504,6 +504,26 @@
       </div>
 </section>
 
+<!-- ======================GitHub ======================= -->
+
+<h1 class="white heading">GitHub Stats</h1>
+
+<div class="calendar"></div>
+<div id="GitHub">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=aniketbabariya24&show_icons=true&theme=dark&count_private=true"
+    alt=""
+  />
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs?username=aniketbabariya24&show_icons=true&locale=en&layout=compact&theme=dark" alt="amitvaghamshi" alt=""> -->
+  <img
+    src="https://streak-stats.demolab.com?user=aniketbabariya24&theme=radical"
+    alt=""
+  />
+  <!-- <img src="http://ghchart.rshah.org/aniketbabariya24" alt="2016rshah's Github chart" />
+    <img src="" alt=""> -->
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniketbabariya24&theme=radical" alt=""> -->
+</div>
+
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -511,4 +531,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./index.js"></script>
 <script>
+  // GitHubCalendar(".calendar", "your-username");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "aniketbabariya24", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "aniketbabariya24", {
+    proxy(username) {
+      return fetch(`https://your-proxy.com/github?user=${username}`);
+    },
+  }).then((r) => r.text());
 </script>

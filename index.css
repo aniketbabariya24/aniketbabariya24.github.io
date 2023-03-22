@@ -583,7 +583,7 @@ skills-container>div>div {
   /* height: 50%; */
 }
 
-.techStacks{
+.project-tech-stack{
   display: grid;
   width: 80%;
   grid-template-columns: repeat(7,1fr);
@@ -592,7 +592,7 @@ skills-container>div>div {
   /* border: 1px solid white; */
 }
 
-.techStacks>div{
+.project-tech-stack>div{
   display: flex;
 }
 
@@ -600,7 +600,7 @@ skills-container>div>div {
   margin-left: -10px;
 }
 
-.techStacks>div>img{
+.project-tech-stack>div>img{
   width: 100%;
   /* height: 46px; */
 }

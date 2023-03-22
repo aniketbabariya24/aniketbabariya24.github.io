@@ -26,7 +26,7 @@ darkmode.onclick = () => {
   }
 };
 
-const resume = document.querySelector(".nav-link resume");
+const resume = document.getElementById("resume-link-1");
 resume.onclick = (e) => {
     // e.preventDefault()
     window.open("./Media/Aniket_Babariya_Resume.pdf")

@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+#stats>div{
+  display: flex;
+  margin-left: 5%;
+  margin-bottom: 15%;
+}
+#stats img{
+  width: 67%;
+  transition:transform .3s;
+}
+#statsimg>img{
+width: 85%;
+margin-left: 5%;
+}
+#stats img:hover{
+  transform: scale(1.1);
+}
 
+
+.calendar{
+  padding: 1%;
+}
 * {
   margin: 0;
   padding: 0;

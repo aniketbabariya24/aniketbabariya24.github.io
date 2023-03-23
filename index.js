@@ -26,14 +26,14 @@ darkmode.onclick = () => {
   }
 };
 
-const resume = document.getElementById("resume-link-1");
+const resume = document.getElementById("resume-button-1");
 resume.onclick = (e) => {
     // e.preventDefault()
     window.open("./Media/Aniket_Babariya_Resume.pdf")
     // console.log("Click");
 }
 
-const containerResume = document.getElementById("resume-link-2");
+const containerResume = document.getElementById("resume-button-2");
 containerResume.onclick = (e) => {
     // e.preventDefault()
     window.open("./Media/Aniket_Babariya_Resume.pdf")

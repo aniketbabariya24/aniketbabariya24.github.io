@@ -44,8 +44,8 @@
 
 :root {
   --main-color: #0078ff;
-  --bg-color: #fff;
-  --text-color: #0f0c27;
+  --text-color: #fff;
+  --bg-color: #0f0c27;
   --hover: hsl(260, 100%, 51%);
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
@@ -58,8 +58,9 @@ section {
 }
 
 body.active {
-  --text-color: #fff;
-  --bg-color: #0f0c27;
+  --bg-color: #fff;
+  --text-color: #0f0c27;
+ 
 }
 
 body {

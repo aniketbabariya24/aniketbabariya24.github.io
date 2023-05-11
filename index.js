@@ -17,11 +17,11 @@ window.onscroll = () => {
 let darkmode = document.querySelector("#darkmode");
 
 darkmode.onclick = () => {
-  if (darkmode.classList.contains("bx-moon")) {
-    darkmode.classList.replace("bx-moon", "bx-sun");
+  if (darkmode.classList.contains("bx-sun")) {
+    darkmode.classList.replace("bx-sun", "bx-moon");
     document.body.classList.add("active");
   } else {
-    darkmode.classList.replace("bx-sun", "bx-moon");
+    darkmode.classList.replace("bx-moon", "bx-sun");
     document.body.classList.remove("active");
   }
 };
@@ -59,3 +59,50 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
+const contactName = document.getElementById("contactName");
+const contactEmail = document.getElementById("contactEmail");
+const contactMessage = document.getElementById("contactMessage");
+
+const contactSubmit = document.getElementById("contactSubmit");
+contactSubmit.onclick = async (e) => {
+  e.preventDefault();
+  console.log([contactName.value, contactEmail.value, contactMessage.value]);
+
+  const data = {
+    service_id: 'service_icbqhz9',
+    template_id: 'template_eminqhk',
+    user_id: 'ta-WWGEIz_7x47NNm',
+    template_params: {
+      'from_name': contactName.value,
+      'to_name' : 'Aniket',
+      'message' : contactMessage.value,
+      'from_email' : contactEmail.value
+    }
+  };
+
+  try {
+
+    let Email = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      body : JSON.stringify(data),
+      headers : {
+        'Content-type' : 'application/json'
+      }
+    })
+
+    if(Email.ok){
+      console.log('Msg received');
+      alert('Thanks for reaching out, Your email sent successfully!!')
+    }
+    
+  } catch (err) {
+    console.log(err);
+  }
+
+
+  contactName.value = null;
+  contactEmail.value = null;
+  contactMessage.value = null;
+};

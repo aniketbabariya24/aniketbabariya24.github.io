@@ -28,6 +28,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar .width-full>.float-left {
     display: none;
+    /* border: 2px solid red; */
 }
 
 .calendar {
@@ -37,6 +38,8 @@ rect.ContributionCalendar-day[data-level='4'] {
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
+    /* border: 2px solid rgb(28, 0, 128); */
+
 }
 
 .calendar > * {
@@ -88,6 +91,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     border-left: 1px solid #ddd;
     border-top: 1px solid #ddd;
     font-size: 11px;
+    border: 2px solid red;
 }
 
 .contrib-column-first {

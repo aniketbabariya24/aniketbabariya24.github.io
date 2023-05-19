@@ -46,7 +46,7 @@
   --main-color: #0078ff;
   --text-color: #fff;
   --bg-color: #0f0c27;
-  --hover: hsl(260, 100%, 51%);
+  --hover: #0064d6;
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
@@ -608,10 +608,13 @@ skills-container>div>div {
     #skills{
         /* border: 2px solid red; */
         padding: 0px 8px;
+        margin-bottom: 25px;
       }
     #allGit{
      width: 100%;
     }
+
+   
       
       #allGit>div:nth-child(1){
         width: 100%;
@@ -684,6 +687,9 @@ skills-container>div>div {
   gap:10px;
   margin-bottom: 20px;
 }
+
+
+
 
 .titleMargine{margin-top: 0px;}
 .textMargine{margin-top: 0px;}
